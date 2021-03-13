@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+}
+main {
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+section {
+    background: #fff url('../images/bg-pattern-mobile.svg') no-repeat top center;
+    width: 80%;
+    margin: auto;
+    border-radius: 25px;
+    padding:0 20px 40px 20px;
+}
+figure {
+   display: flex;
+   justify-content: center;
+}
+figure img:nth-of-type(1){
+    display: none;
+}
+figure .sec-img {
+    margin-top: -110px;
+    margin-left: -30px;
+}
+h1 {
+    text-align: center;
+    padding: 50px 0 15px;
+}
+.question {
+    padding: 15px 0;
+    border-bottom: thin solid hsl(240, 5%, 91%);
+}
+span {
+    display: inline-block;
+    width:90%;
+    color: hsl(238, 29%, 16%);
+}
+.question img {
+   cursor: pointer;
+}
+.question span:hover {
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+.diappear{
+    padding-top: 10px;
+    color: hsl(240, 6%, 50%);
+    display: none;
+}
+/* added javascript classes */
+.bold-span{
+    font-weight: 600;
+}
+
+.appear {
+    display: block;
+}
+.drop-img{
+    transform: rotate(180deg);
+}
+@media (min-width:992px){
+    section {
+        background-image: none;
+        padding: 0;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    article {
+        width: 48%;
+        padding: 10px 40px 60px;
+    }
+    h1 {
+        font-size: 28px;
+        text-align: left;
+    }
+    figure {
+        background: url('../images/illustration-woman-online-desktop.svg') no-repeat,
+        url('../images/bg-pattern-desktop.svg') no-repeat, #fff;
+        background-position: -60px, right ;
+        width: 45%;
+        padding: 30px 0;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+    figure img:nth-of-type(1){
+        display: inline-block;
+        position: relative;
+        right: 55%;
+        top: 120px;
+        width: 150px;
+        height: 150px;
+    }
+    figure .sec-img {
+        display: none;
+    }
+}
